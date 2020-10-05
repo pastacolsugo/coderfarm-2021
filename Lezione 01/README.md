@@ -1,5 +1,5 @@
 # Lezione 1
-### [Esercizi per la prossima settimana](#ESERCIZI.md)
+### [Esercizi per la prossima settimana](ESERCIZI.md)
 
 # Indice
 - [Output su console](#output-su-console)
