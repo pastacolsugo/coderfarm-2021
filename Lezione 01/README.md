@@ -1,3 +1,17 @@
+# Lezione 1
+### [Esercizi per la prossima settimana](#ESERCIZI.md)
+
+# Indice
+- [Output su console](#output-su-console)
+- [Tipi](#tipi)
+- [Variabili](#variabili)
+- [Commenti](#commenti)
+- [Operatori matematici](#operatori-matematici)
+- [Input da console](#input-da-console)
+- [Conversione da string a numero](#conversione-da-string-a-numero)
+- [If-Else](#if-else)
+- [Operatori di confronto](#operatori-di-confronto)
+
 # Output su console
 
 ```py
