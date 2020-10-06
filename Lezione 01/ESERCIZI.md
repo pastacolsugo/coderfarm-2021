@@ -91,3 +91,25 @@ Il numero è troppo grande.
 Inserisci il numero: -42
 Il numero è troppo piccolo.
 ```
+
+## Ordina 3 numeri
+Chiedere in input 3 numeri e restituirli in output ordinati in ordine crescente.
+### Esempi input/output
+```
+Inserisci il 1° numero: 4
+Inserisci il 2° numero: 1
+Inserisci il 3° numero: 2
+I numeri ordinati sono: 1 2 4
+```
+```
+Inserisci il 1° numero: -5
+Inserisci il 2° numero: 3
+Inserisci il 3° numero: 0
+I numeri ordinati sono: -5 0 3
+```
+```
+Inserisci il 1° numero: 2
+Inserisci il 2° numero: 2
+Inserisci il 3° numero: 1
+I numeri ordinati sono: 1 2 2
+```
