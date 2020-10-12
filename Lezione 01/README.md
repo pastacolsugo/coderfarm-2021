@@ -154,6 +154,7 @@ In python sono presenti vari operatori di confronto che vengono spesso usati com
 - `>=` : maggiore o uguale. (es. `2 >= 1` è vero, `1 >= 2` è falso, `1 >= 1` è vero)
 - `<=` : minore o uguale. (es. `2 <= 1` è falso, `1 <= 2` è vero, `1 <= 1`  è vero)
 - `==` : uguale. (es. `1 == 1` è vero, `1 == 2` è falso)
+- `!=` : diverso. (es. `1 != 2` è vero, `1 != 1` è falso)
 
 Per l'uguaglianza viene utilizzato il doppio uguale (`==`) in vece che uno singolo (`=`) per distinguerlo dall'assegnamento di una variabile.
 
