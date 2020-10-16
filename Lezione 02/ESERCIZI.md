@@ -34,6 +34,7 @@ Inserisci un operatore: /
 Inserisci il primo numero: 3
 Inserisci il secondo numero: 2
 Il risultato è 3 / 2 = 1.5
+Inserisci un operatore: exit
 ```
 #### Esempio parte extra (mem)
 ```
@@ -45,6 +46,7 @@ Inserisci un operatore: /
 Inserisci il primo numero: mem
 Inserisci il secondo numero: 2
 Il risultato è 42 / 2 = 21
+Inserisci un operatore: exit
 ```
 
 ## Trova il numero maggiore
@@ -76,3 +78,35 @@ Inserisci un numero: 0
 Il numero più frequente è 5
 ```
 
+## Statistiche
+Chiedere numeri in input fintanto che l'utente non inserisce 0.  
+Successivamente chiedere in input una operazione e 2 numeri.
+
+L'operazione andrà eseguita sulla lista di numeri letti in precedenza e più essere `somma`, `media`, `maggiore`, `minore`.  
+I due numeri rappresentano rispettivamente gli indici di inizio e fine dell'operazione sulla lista (considerando il primo elemento della lista di indice `0`), quindi l'operazione non andrà eseguita su tutta la lista ma solo ai numeri compresi tra le posizioni indicate.
+
+Continuare fintanto che l'utente non inserisce `'exit'` come operazione.  
+
+### Esempi input/output
+```
+Inserisci un numero: 5
+Inserisci un numero: 7
+Inserisci un numero: 3
+Inserisci un numero: 10
+Inserisci un numero: 9
+Inserisci un numero: 8
+Inserisci un numero: 0
+Inserisci un'operazione: somma
+Inserisci l'indice di partenza: 1
+Inserisci l'indice di fine: 3
+La somma dei numeri dalla posizione 1 alle posizione 3 è 20
+Inserisci un'operazione: media
+Inserisci l'indice di partenza: 0
+Inserisci l'indice di fine: 5
+La media dei numeri dalla posizione 0 alle posizione 5 è 7
+Inserisci un'operazione: exit
+```
+
+In questo esempio la lista inserita è `[5, 7, 3, 10, 9, 8]`.  
+La prima operazione è la somma dei numeri da indice 1 a indice 3, quindi `7 + 3 + 10 = 20`.  
+La seconda operazione è la media dei numeri da indice 0 a indice 5, cioè la media di tutta la lista, quindi `(5 + 7 + 3 + 10 + 9 + 8) / 6 = 7`.

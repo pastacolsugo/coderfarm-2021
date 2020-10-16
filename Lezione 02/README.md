@@ -144,6 +144,18 @@ A differenza di quello che potrebbe venire naturale pensare gli indici partono d
 Se per esempio volessimo accedere al terzo elemento all'interno di una lista `l` dovremmo scrivere `l[2]`.  
 Possiamo quindi dire che gli indici valgono sempre `1` in meno rispetto alla "posizione vera".
 
+Esempio stampa tutti i numeri all'interno di una lista:
+```py
+# per questo esempio conosciamo già i valori
+# ma nella realtà idealmente sono inseriti dall'utente
+l = [1, 5, -2]
+# l'indice parte da 0 e arriva fino a len(l)-1
+i = 0
+while i < len(l):
+    # in questo esempio la print verrà eseguita tre volte per: l[0], l[1] e l[2]
+    print(l[i])
+```
+
 Esempio indovina numero random con history dei tentativi:
 
 ```py
