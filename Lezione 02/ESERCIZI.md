@@ -19,7 +19,7 @@ Stampare il risultato dell'operazione sui due numeri.
 Continuare fintanto che l'utente non inserisce `'exit'` come operatore.  
 Supportare almeno le seguenti operazioni `+`, `-`, `*`, `/`. Se vi va potete aggiungere altre operazioni tipo `>` e `<` oppure potenza e radice quadrata.
 
-Extra: permettere di utilizzare, al posto di uno dei due numeri, un simbolo rappresentante il valore del risultato precedente (similmente a come funziona `mem` sulla calcolatrice).
+_Extra_: permettere di utilizzare, al posto di uno dei due numeri, un simbolo rappresentante il valore del risultato precedente (similmente a come funziona `mem` sulla calcolatrice).
 ### Esempi input/output
 ```
 Inserisci un operatore: +
@@ -56,6 +56,23 @@ Inserisci un numero: 5
 Inserisci un numero: 30
 Inserisci un numero: -10
 Inserisci un numero: 0
-Il numero più grande è: 30.
+Il numero più grande è 30
+```
+
+## Trova il numero più frequente
+Chiedere numeri in input fintanto che l'utente non inserisce 0.  
+Stampare in output il numero che è stato inserito più volte, in caso ce ne sia più di uno va bene uno qualsiasi.
+
+_Hint_: Leggete prima tutti i numeri all'interno di una lista e solo successivamente cercate quello più frequente.
+### Esempi input/output
+```
+Inserisci un numero: 5
+Inserisci un numero: 7
+Inserisci un numero: 3
+Inserisci un numero: 5
+Inserisci un numero: 3
+Inserisci un numero: 5
+Inserisci un numero: 0
+Il numero più frequente è 5
 ```
 
