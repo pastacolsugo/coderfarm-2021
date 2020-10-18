@@ -98,12 +98,12 @@ while n != 0:
 Esempio indovina numero random:
 ```py
 while numero_utente != da_indovinare:
-	numero_utente = int(input("Inserisci un numero: "))
+    numero_utente = int(input("Inserisci un numero: "))
 
     if numero_utente > da_indovinare:
-		print("Il numero da indovinare è più piccolo!")
-	elif numero_utente < da_indovinare:
-		print("Il numero da indovinare è più grande!")
+        print("Il numero da indovinare è più piccolo!")
+    elif numero_utente < da_indovinare:
+        print("Il numero da indovinare è più grande!")
 
 print("Bravo!")
 ```
