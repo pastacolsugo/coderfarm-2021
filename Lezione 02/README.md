@@ -75,7 +75,7 @@ else:
 ```
 
 # while
-Il `while` è un modo per eseguire più volte dei pezzi di codice, fintanto che una condizione è vera.
+Il `while` è un modo per eseguire più volte un blocco di codice, fintanto che una condizione è vera.
 
 Il modo in cui si utilizza è, nella forma, molto simile all'`if`:
 ```py
@@ -83,10 +83,28 @@ i = 0
 while i < 10:
     print(i)
     i = i + 1
+print("Il while è finito!")
 ```
-la differenza è che, invece che eseguire il blocco di codice una sola volta se la condizione è vera, continua ad eseguirlo fintanto che non diventa falsa.
+la differenza con `if` è che, invece che eseguire il blocco di codice una sola volta se la condizione è vera, continua ad eseguirlo fintanto che è vera (cioè fintanto che non diventa falsa).
 
 Nell'esempio sopra ogni volta viene printa la variabile `i` e poi incrementata di `1` fintanto che `i` è minore di `10`. Verranno quindi stampati tutti i numeri da `0` a `9`.
+
+La condizione del `while` viene controllata ogni volta prima di eseguire tutto il blocco di codice (o, vista in un altro modo, viene controllata prima di entrare e poi ogni volta alla fine del blocco).  
+Per capire meglio vediamo l'esempio sopra passo per passo:  
+1. nella prima riga `i` viene settata a `0`
+1. per poter "entrare" nel while viene controllata la condizione `i < 10`, che in questo caso è `0 < 10` e quindi vera
+1. dato che la condizione è vera entra nel while
+1. printa `i` e quindi `0`
+1. incrementa `i` di uno e quindi diventa `1`
+1. dato che ha finito di eseguire tutto il blocco di codice del while controlla sebisogna ripeterlo
+1. ora viene circa ripetuto quanto fatto dal punto 2 in poi, viene quindi controllata la condizione `i < 10` che in questo caso è però `1 < 10`
+1. la condizione è vera quindi viene eseguito nuovamente il blocco
+1. questa volta però printa `1` e `i` diventa `2`
+1. continua così fintanto che `i` è `9`
+1. dopo aver printato `9`, viene incrementata `i` a `10`
+1. dato che è finito il blocco bisogna controllare nuovamente la condizione, questa volta però `i < 10` è falso perché sarebbe `10 < 10`
+1. quindi esce del tutto dal while e esegue il codice dopo, cioè in questo caso esegue la print `"Il while è finito!"`
+
 
 Esempio lettura numeri da input fintanto che non viene inserito `0`:
 ```py
