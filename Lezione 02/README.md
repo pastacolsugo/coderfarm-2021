@@ -174,6 +174,16 @@ while i < len(l):
     print(l[i])
 ```
 
+Esempio somma tutti i numeri all'interno di una lista:
+```py
+l = [1, 5, -2]
+somma = 0
+i = 0
+while i < len(l):
+    somma = somma + l[i]
+print(somma)
+```
+
 Esempio indovina numero random con history dei tentativi:
 
 ```py
