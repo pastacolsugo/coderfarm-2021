@@ -181,6 +181,7 @@ somma = 0
 i = 0
 while i < len(l):
     somma = somma + l[i]
+    i = i + 1
 print(somma)
 ```
 
