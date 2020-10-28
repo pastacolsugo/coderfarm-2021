@@ -196,6 +196,7 @@ def is_vowel(c):
     ...
 
 print(is_vowel("a")) # True
+print(is_vowel("A")) # True
 print(is_vowel("b")) # False
 print(is_vowel("e")) # True
 print(is_vowel("9")) # False
@@ -208,6 +209,8 @@ print(is_vowel("9")) # False
 # e ritorna un bool che dice se è una vocale o meno
 
 def is_vowel(c):
+    # convertiamo il carattere in minuscolo per non dover aggiungere il doppio di condizioni
+    # per includere anche le vocali in maiuscolo
     c = c.lower()
     if c == "a" or c == "e" or c == "i" or c == "o" or c == "u":
         return True
@@ -215,6 +218,7 @@ def is_vowel(c):
         return False
 
 print(is_vowel("a")) # True
+print(is_vowel("A")) # True
 print(is_vowel("b")) # False
 print(is_vowel("e")) # True
 print(is_vowel("9")) # False
