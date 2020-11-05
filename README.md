@@ -4,6 +4,7 @@
 - **[Lezione 2](/Lezione%2002)**
 - **[Lezione 3](/Lezione%2003)**
 - **[Lezione 4](/Lezione%2004)**
+- **[Lezione 5](/Lezione%2005)**
 
 ## Siti con esercizi:
 - https://codingbat.com/python - esercizi vari di base in Python, abbastanza simili a quelli che vi darei io
