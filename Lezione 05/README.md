@@ -7,6 +7,7 @@
   * [Unpacking](#unpacking)
   * [Utilizzi](#utilizzi)
 - [Dizionari](#dizionari)
+- [Operatore `in`](#operatore-in)
 
 # Tuple
 
@@ -168,4 +169,110 @@ print(trova_voti_persona(registro, "pietro")) # []
 ```
 
 # Dizionari
-// TODO
+
+Un dizionario è una struttura dati che permette di associare a una chiave un valore.
+
+È simile a una lista nel senso che permette di memorizzare più valori, nella lista però ogni elemento è associato al proprio indice che dipende puramente dalla posizione, mentre invece in un dizionario ogni elemento è associato a una chiave decisa al momento dell'inserimento.
+
+Un dizionario si costruisce utilizzando le parentesi graffe e separando chiave e valore tramite i due punti (`:`).
+```py
+# d è un dizionario
+# alla chiave intera 5 è associata la stringa "ciao"
+# alla chiave intera -2 è associato l'intero 10
+# alla chiave stringa "cane" è associata la stringa "gatto"
+d = {5: "ciao", -2: 10, "cane": "gatto"}
+print(d) # {5: 'ciao', -2: 10, 'cane': 'gatto'}
+```
+
+notate come la chiave e il valore possano essere di svariati tipi, non solo interi per esempio.
+
+È possibile accedere e modificare gli elementi del dizionario utilizzando le parentesi quadre, a differenza delle liste però l'indice dell'elemento non è la sua posizione bensì la chiave.
+
+```py
+d = {5: "ciao", -2: 10, "cane": "gatto"}
+
+# accedo all'elemento con chiave 5
+print(d[5]) # 'ciao'
+# accedo all'elemento con chiave "cane"
+print(d["cane"])
+
+# aggiungo un nuovo elemento con chiave "banana" e valore "gialla"
+d["banana"] = "gialla"
+# modifico il valore di "cane" in "giraffa"
+d["cane"] = "giraffa"
+
+# possiamo vedere come le modifiche sopra si applicano al dizionario
+print(d) # {5: 'ciao', -2: 10, 'cane': 'giraffa', 'banana': 'gialla'}
+
+# se invece provo ad accedere a un elemento non esistente mi da errore
+print(d[1]) # ERRORE: la chiave 1 non esiste all'interno del dizionario d
+```
+
+Un esempio di utilizzo di un dizionario può essere quello di associare a un certo utente la sua password:  
+_(Ovviamente questo non è in alcun modo sicuro ed è solo fatto a scopo dimostrativo. Nella vita reale le password vengono gestite maniera differente (si spera).)_
+
+```py
+# si può creare un dizionario vuoto non mettendo niente tra le graffe
+password_utenti = {}
+
+# esempio di aggiunta di utenti
+password_utenti["samuele"] = "python"
+password_utenti["ugo"] = "gattino42"
+
+# esempio modifica password
+# (anche se nella vita reale prima bisognerebbe controllare che l'utente conosca la vecchia password)
+password_utenti["samuele"] = "giraffa"
+
+# esempio login
+username = input("Inserisci il nome utente: ")
+password = input("Inserisci la password: ")
+if password == password_utenti[username]:
+    print("Bravo, la password è corretta!")
+else:
+    print("Password errata :(")
+```
+
+# Operatore `in`
+
+Ci è capitato più volte di fare un esercizio nel quale dovevamo controllare se un certo valore era presenta in una lista e lo abbiamo risolto con un ciclo `for`.
+
+C'è un realtà un modo più semplice per farlo in python e cioè utilizzando l'operatore `in`:
+
+```py
+l = [1, 2, 3]
+print(1 in l) # True
+print(4 in l) # False
+```
+
+In generale `in` permette di verificare la presenza di un elemento all'interno di una sequenza e non funziona solo con le liste ma anche con altri tipi di dato che contengono più valori al loro interno.
+
+È infatti possibile utilizzarlo nello stesso modo anche con le tuple:
+```py
+t = 1, 2, 3
+print(1 in t) # True
+print(4 in t) # False
+```
+
+Ma soprattutto è possibile utilizzarlo con i dizionari, dove dice se una determinata chiave è presente o meno all'interno di un dizionario:
+```py
+d = {"a": 1, "b": 2}
+print("a" in d) # True
+print("c" in d) # False
+```
+
+Potreste aver notato che nell'esempio login, python da errore nel momento in cui inseriamo un utente non esistente in quanto tenta di accedere al dizionario con una chiave non presente.
+
+Un nodo per risolvere questo problema è per l'appunto di controllare l'esistenza del utente all'interno del dizionario prima di leggerne la password:
+
+```py
+username = input("Inserisci il nome utente: ")
+# se l'utente esiste (cioè se è presente all'interno del dizionario)
+if username in password_utenti:
+    password = input("Inserisci la password: ")
+    if password == password_utenti[username]:
+        print("Bravo, la password è corretta!")
+    else:
+        print("Password errata :(")
+else:
+    print("Questo utente non esiste :(")
+```
