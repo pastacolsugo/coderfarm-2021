@@ -1,4 +1,7 @@
 # Lezione 8
+### [Esercizi per la prossima settimana](ESERCIZI.md)
+
+#
 
 - [File](#file)
   * [with](#with)

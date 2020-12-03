@@ -12,7 +12,7 @@ _È un ottimo editor per programmare e supporta tantissimi linguaggi di programm
 - [Disuguaglianze tra valori non numerici](#disuguaglianze-tra-valori-non-numerici)
 - [Ordinamento](#ordinamento)
 - [Indici negativi](#indici-negativi)
-- [min/max](#min/max)
+- [min/max](#minmax)
 - [Esercizio: valore più frequente](#esercizio-valore-più-frequente)
 
 # Disuguaglianze tra valori non numerici
