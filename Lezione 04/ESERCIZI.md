@@ -75,7 +75,7 @@ def media_pesata(voti):
 
 # esempi
 print(media_pesata([[8, 1.0], [9, 0.5], [5, 0.5], [6, 0.75], [3, 0.25]])) # 6.75
-print(media_pesata([[10, 0.5], [6, 1.0], [7, 0.25], [2, 0.75], [5, 1.0]])) # 6.5
+print(media_pesata([[10, 0.5], [6, 1.0], [7, 0.25], [2, 0.75], [5, 1.0]])) # 5.5
 ```
 Nel primo esempio stiamo passando alla funzione 5 voti:  
 - `8` con il peso di `1.0`
